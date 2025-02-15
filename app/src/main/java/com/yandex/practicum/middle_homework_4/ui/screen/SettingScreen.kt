@@ -48,6 +48,7 @@ fun SettingScreen(
             },
             label = { Text(stringResource(R.string.periodic_refresh_minutes)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            singleLine = true
         )
         Spacer(Modifier.padding(top = 16.dp))
         TextField(
@@ -59,6 +60,7 @@ fun SettingScreen(
             },
             label = { Text(stringResource(R.string.delay_first_launch_sec)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            singleLine = true
         )
         Spacer(Modifier.padding(top = 16.dp))
         Button(onClick = {
